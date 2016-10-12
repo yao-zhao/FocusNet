@@ -1,5 +1,5 @@
 % add path
-% addpath('/home/yz/caffe-yao/matlab')
+addpath('/home/yz/caffe-yao/matlab')
 
 modelpath = 'models/probnet12';
 model_def = fullfile(modelpath,'deploy_1.prototxt');
@@ -26,7 +26,9 @@ mean = [];
 var = [];
 for i = 1:16:201-16
     inputdata={imgs(:,:,:,i:i+15)};
+    tic
     loss=net.forward(inputdata);
+    toc
     mean = [mean, loss{1}];
     var = [var, loss{2}];
 end
