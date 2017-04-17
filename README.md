@@ -7,7 +7,7 @@ download github.com/yao-zhao/caffe and install
 A demo for calling the trained network in matlab interface
 
 ### model architecture
-![alt text](https://github.com/yao-zhao/FocusNet/drawnet.pdf "Network Architecture")
+![alt text](https://github.com/yao-zhao/FocusNet/blob/master/drawnet.pdf "Network Architecture")
 
 ### paper link
 in submission
