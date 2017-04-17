@@ -1,5 +1,4 @@
 % add path
-addpath('/home/yz/caffe-yao/matlab')
 
 modelpath = 'models/probnet12';
 model_def = fullfile(modelpath,'deploy_1.prototxt');
@@ -35,8 +34,3 @@ end
 
 x=1:length(mean);
 errorbar(x,mean,var);
-
-% 
-% for i = 1:length(net.outputs)
-%     
-% end
